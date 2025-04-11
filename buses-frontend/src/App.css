@@ -1,0 +1,154 @@
+/* Estilo contenedor */
+.app-container {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo del título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo de la tabla */
+.bus-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bus-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.bus-table th, .bus-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #dee2e6;
+}
+
+.bus-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Botones de acción */
+.acciones {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.ver {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editar {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.eliminar {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Botones de paginación */
+.paginacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.paginacion button {
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paginacion button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.paginacion .activo {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Ya tienes esto para el modal, se mantiene igual */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #0b5394;
+  text-align: center;
+}
+
+.modal-content p {
+  margin: 10px 0;
+}
+
+.btn-cerrar {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-cerrar:hover {
+  background-color: #083c6b;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
